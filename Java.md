@@ -129,9 +129,6 @@ switch分支
 + break：用于终止语句块的执行
 + continue：用于结束本次循环，继续执行下一次循环
 + return：	使用在方法，用于跳出所在的方法   注：若使用在main方法中，则结束程序
-
-<font style="background-color:#FBDE28;"></font>
-
 ## 数组
 数组是一种数据类型，是引用类型
 
