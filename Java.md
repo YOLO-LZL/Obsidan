@@ -1,0 +1,139 @@
+# Java基础学习
+## Java概述
+### JDK介绍
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761135862306-9bb4e9fd-e1b8-4ab4-bba9-ca6c57705dc4.png)
+
+#### JDK
+JDK全称（Java Development Kit Java开发工具包）
+
+JDK=JRE+JAVA开发工具（java，javac，javadoc，javap等）
+
+#### JRE
+JRE（Java runtime environment Java运行环境）
+
+JRE=JVM+Java核心类库[类]
+
+## 变量
+### 数据类型
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761199843743-cca02853-613e-48d0-9b53-a4d08f968e7a.png)
+
+1. long型需要在数值后面加上大写或小写的L，`long n1 = 1L;`
+2. 浮点数=符号位+指数位+尾数位，尾数位可能丢失，造成精度的损失。
+3. Java默认浮点常量为double，要声明float需要在数字后面加上f或F。
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761206215456-03f038a2-6743-4297-be3d-03dff59fb407.png)像这种情况，做比较运算要小心；应以两个数的差值在某个精度范围类判断。
+
+#### 基本数据类型转换
+分为自动类型转换和强制类型转换
+
+自动类型转换：在赋值和运算时，精度小的类型自动转换为精度大的数据类型
+
+char->int->long->float->double;
+
+byte->short->int->long->float->double.
+
+byte,short,char可以计算，但是会转换成int类型。
+
+#### 基本数据类型和String类型的转换
+1. 基本数据+类型->String，在变量后面加上“”即可。
+2. String->基本数据类型
+
+使用基本数据类型的包装类的相应方法得到基本数据类型
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761373929832-4d89fc2c-fc09-4376-af94-47dd31e7b56f.png)
+
+字符串转成字符含义指将字符串的第一个字符取到
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761374300071-f3870ff5-9640-4a8d-9f66-cd5ea4d63400.png)
+
+### Java API
+#### Java api中文文档
+[https://www.matools.com/api/java8](https://www.matools.com/api/java8)
+
+#### java类的组织形式
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761207196282-36966a94-2774-4bc6-88fb-8c37e174593c.png)
+
+
+
+## 运算符
+### 算术运算
+a%b=a-a/b*b
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761621903650-bba15003-1f6a-4221-849c-0caf23cfa0d0.png)
+
+### 逻辑运算符
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761703834576-4e518cca-2910-49b8-af54-df0f700e1b80.png)
+
++ 短路与&&与逻辑与&的区别：短路与若第一个变量为false，则不会判断第二个变量，效率更高。
++ 短路或与逻辑或同上。
+
+### 赋值运算
++ 复合赋值运算会对变量进行类型转换
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761911226985-139f8c58-69cd-466d-84f3-ee37fa4ea092.png)
+
+### 三元运算符
++ 基本语法
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761911434303-07376b23-4d0d-4a6b-ac89-cbf244597812.png)
+
++ 案例演示
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761911482621-281baa27-808a-4933-9ca2-252c1803da6d.png)
+
+### 运算符优先级
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761998267891-bf10088e-e4db-403d-a5b9-9c018c6380c7.png)![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1761998443820-42e24724-6559-46e8-8d26-697c1bdcd248.png)
+
+### 键盘输入语句
+
+
+```java
+import java.util.Scanner;//导入相应的类
+public class Input{
+    public static void main(String[] args){
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("请输入名字");
+        String name = myScanner.next();//字符串
+        System.out.println("请输入年龄");
+        int age = myScanner.nextInt();//整形
+        System.out.println("请输入薪资");
+        double sal = myScanner.nextDouble();//浮点型
+        System.out.println("人员信息如下");
+        System.out.println("名字是" + name + "年龄是" + age + 
+                           "薪资是" + sal);
+        char c1 = myScanner.next().charArt(0);//字符
+    }
+}
+```
+
+## 程序控制结构
+### 顺序控制
+程序从上至下执行，中间没有中断和跳转，程序默认的执行结构。
+
+### 分支控制
+if-else
+
+switch分支
+
+![](https://cdn.nlark.com/yuque/0/2025/png/61977733/1762431654908-2a2fe1fe-bc53-454b-afbf-f7f2692f36b7.png)
+
++ 细节
+
+<font style="background-color:#FBDE28;">switch（表达式）中表达式返回值的类型必须为byte,shaort,int,char,enum(枚举),String</font>
+
+<font style="background-color:#FBDE28;">case()中必须是常量或常量表达式</font>
+
+<font style="background-color:#FBDE28;">default可有可无</font>
+
+### 跳转控制语句
++ break：用于终止语句块的执行
++ continue：用于结束本次循环，继续执行下一次循环
++ return：	使用在方法，用于跳出所在的方法   注：若使用在main方法中，则结束程序
+
+<font style="background-color:#FBDE28;"></font>
+
+## 数组
+数组是一种数据类型，是引用类型
+
+
+
