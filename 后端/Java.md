@@ -268,3 +268,5 @@ age = pAge;
 ### this关键字
 #### 什么是this
 Java虚拟机会给每个对象分配this，代表当前对象
+#### this的本质
+this本质是指向对象本身的一个地址，this的hashCode与对象的hashCode完全相同
