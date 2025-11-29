@@ -297,3 +297,7 @@ package 包名；
 2) java.util.* //util 包，系统提供的工具包, 工具类，使用 Scanner
 3) java.net.* //网络包，网络开发
 4) java.awt.* //是做 java 的界面开发，GUI
+#### 包的引入
+我们需要使用到哪个类，就导入哪个类即可，不建议使用*导入
+import java.util.Scanner;  //表示只会引入 java.util 包下的 Scanner
+import java.util.*;//表示将 java.util 包下的所有类都引入(导入)
