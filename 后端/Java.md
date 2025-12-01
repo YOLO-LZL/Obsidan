@@ -302,3 +302,9 @@ package 包名；
 import java.util.Scanner;  //表示只会引入 java.util 包下的 Scanner
 import java.util.*;//表示将 java.util 包下的所有类都引入(导入)
 ### 访问修饰符
+#### 基本介绍
+java 提供四种访问控制修饰符号，用于控制方法和属性(成员变量)的访问权限（范围）:
+1) 公开级别:用 public 修饰,对外公开
+2) 受保护级别:用 protected 修饰,对子类和同一个包中的类公开
+3) 默认级别:没有修饰符号,向同一个包的类公开.
+4) 私有级别:用 private 修饰,只有类本身可以访问,不对外公开.
