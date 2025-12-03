@@ -322,13 +322,15 @@ java 提供四种访问控制修饰符号，用于控制方法和属性(成员�
 1. 将属性进行私有化private  【不能直接修改属性
 2. 提供一个公共的(public)set方法，用于对属性判断并赋值 
 ```java
-public void setXxx(类型参数名){//Xxx表示某个属性
+public void setXxx(类型参数名){
+//Xxx表示某个属性
 //加入数据验证的业务逻辑
 属性=参数名；}
 ```
 
 3. 提供一个公共的(public)get方法，用于获取属性的值
 ```java
-public 数据类型 getXxx(){//权限判断，Xxx某个属性
+public 数据类型 getXxx(){
+//权限判断，Xxx某个属性
 return xx;}
 ```
