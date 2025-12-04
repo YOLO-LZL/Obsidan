@@ -334,3 +334,4 @@ public 数据类型 getXxx(){
 //权限判断，Xxx某个属性
 return xx;}
 ```
+#### 继承
