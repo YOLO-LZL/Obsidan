@@ -1,3 +1,17 @@
+
+```easy-tracker-daily-overview
+```
+```easy-tracker-year-calendar-heatmap
+```
+```easy-tracker-buttons
+  稍微做了一点 | 1
+  顺利完成 | 2
+  额外完成 | 3
+```
+```easy-tracker-my-goal
+Java学习
+```
+
 # Java基础学习
 ## Java概述
 ### JDK介绍
@@ -359,3 +373,5 @@ super();这个语句功能就是调用父类的无参构造器，由编译器提
 8. 父类构造器的调用不限于直接父类！将一直往上追溯直到 Object 类(顶级父类)
 9. 子类最多只能继承一个父类(指直接继承)，即 java 中是单继承机制。思考：如何让 A 类继承 B 类和 C 类？ ==【A 继承 B， B 继承 C】==
 10. 不能滥用继承，子类和父类之间必须满足 is-a 的逻辑关系
+
+* 2026-01-13 - 2
