@@ -401,3 +401,6 @@ Animal animal = new Cat();
 ```java
 Cat cat = (Cat) animal;
 ```
+将上述的Cat替换成Dog不对，因为animal原本就指向cat，上述操作相当于新建了一个cat引用指向对象cat
+此时cat.catchmouse即可访问子类的特有方法
+
