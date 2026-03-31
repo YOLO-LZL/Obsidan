@@ -266,14 +266,44 @@ Function Call 的工作流程分四步。
 
 第一步，**定义函数**。开发者预先告诉 LLM「你手边有哪些工具可以用」，用 JSON 格式描述每个函数的名字、功能说明和参数。比如你告诉它有一个 `get_weather` 函数，接收一个城市名参数，返回天气信息。
 
-```
-{  "tools": [    {      "type": "function",      "function": {        "name": "get_weather",        "description": "获取指定城市的实时天气",        "parameters": {          "type": "object",          "properties": {            "city": {              "type": "string",               "description": "城市名称，比如：上海"            }          },          "required": ["city"]        }      }    }  ]}
+```json
+{  
+  "tools": [  
+    {  
+      "type": "function",  
+      "function": {  
+        "name": "get_weather",  
+        "description": "获取指定城市的实时天气",  
+        "parameters": {  
+          "type": "object",  
+          "properties": {  
+            "city": {  
+              "type": "string",   
+              "description": "城市名称，比如：上海"  
+            }  
+          },  
+          "required": ["city"]  
+        }  
+      }  
+    }  
+  ]  
+}
 ```
 
 第二步，**模型判断**。用户提问后，LLM 分析用户的意图，自己判断「要回答这个问题，我需要调用哪个函数」。如果用户问「上海今天天气如何」，LLM 会决定调用 `get_weather`，并生成参数 `{"city": "上海"}`。
 
-```
-{  "tool_calls": [    {      "type": "function",      "function": {        "name": "get_weather",        "arguments": "{\"city\": \"上海\"}"      }    }  ]}
+```json
+{  
+  "tool_calls": [  
+    {  
+      "type": "function",  
+      "function": {  
+        "name": "get_weather",  
+        "arguments": "{\"city\": \"上海\"}"  
+      }  
+    }  
+  ]  
+}
 ```
 
 第三步，**执行函数**。注意，这一步非常关键，**LLM 自己并不执行函数**。它只是输出了「我想调用这个函数，参数是这些」的结构化指令。真正执行函数的是你的应用程序。你的代码拿到 LLM 返回的调用指令后，解析出 `city=上海`，去实际调用天气 API，拿到结果比如 `22度，多云`。
