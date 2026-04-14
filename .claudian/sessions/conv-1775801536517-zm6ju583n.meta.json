@@ -1,0 +1,26 @@
+{
+  "id": "conv-1775801536517-zm6ju583n",
+  "providerId": "claude",
+  "title": "m",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1775801536519,
+  "updatedAt": 1775803374042,
+  "lastResponseAt": 1775803374042,
+  "sessionId": "6adeef3f-0dae-45de-a122-51ee7a639207",
+  "providerState": {
+    "providerSessionId": "6adeef3f-0dae-45de-a122-51ee7a639207",
+    "previousProviderSessionIds": [
+      "42249c70-50f1-4c34-8c81-996baf3d59de",
+      "c3c431cf-a287-462e-a78a-41c0ffd746b3"
+    ]
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 20754,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 20754,
+    "percentage": 10
+  }
+}
