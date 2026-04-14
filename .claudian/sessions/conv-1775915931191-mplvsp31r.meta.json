@@ -1,0 +1,23 @@
+{
+  "id": "conv-1775915931191-mplvsp31r",
+  "providerId": "claude",
+  "title": "Identify model version",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775915931192,
+  "updatedAt": 1775994457479,
+  "lastResponseAt": 1775994429737,
+  "sessionId": "7e5eca59-820b-4b3d-a623-0510d2ce00e8",
+  "providerState": {
+    "providerSessionId": "7e5eca59-820b-4b3d-a623-0510d2ce00e8"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 126,
+    "cacheCreationInputTokens": 19010,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 19136,
+    "percentage": 10,
+    "contextWindowIsAuthoritative": true
+  }
+}

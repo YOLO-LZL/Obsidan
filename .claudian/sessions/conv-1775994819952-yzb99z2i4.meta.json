@@ -1,0 +1,23 @@
+{
+  "id": "conv-1775994819952-yzb99z2i4",
+  "providerId": "claude",
+  "title": "Initialize project",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775994819953,
+  "updatedAt": 1775995062162,
+  "lastResponseAt": 1775995062162,
+  "sessionId": "767fde93-7cc5-405e-9523-c2b01a58dc24",
+  "providerState": {
+    "providerSessionId": "767fde93-7cc5-405e-9523-c2b01a58dc24"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 8308,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 18038,
+    "contextWindow": 200000,
+    "contextTokens": 26346,
+    "percentage": 13,
+    "contextWindowIsAuthoritative": true
+  }
+}
