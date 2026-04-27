@@ -2,7 +2,7 @@
   "userName": "",
   "permissionMode": "yolo",
   "model": "haiku",
-  "thinkingBudget": "medium",
+  "thinkingBudget": "off",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -42,9 +42,9 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "",
       "environmentHash": "",
-      "installationMethodsByHost": {
-        "AzurerMacBook-Pro.local": "native-windows"
-      },
+      "installationMethod": "native-windows",
+      "installationMethodsByHost": {},
+      "wslDistroOverride": "",
       "wslDistroOverridesByHost": {}
     }
   },
@@ -57,9 +57,9 @@
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {
-    "claude": "medium"
+    "claude": "off"
   },
-  "lastCustomModel": "gpt-5.4",
+  "lastCustomModel": "",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
