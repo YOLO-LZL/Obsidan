@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ':*)",
+      "WebFetch(domain:v.douyin.com)",
+      "WebFetch(domain:www.iesdouyin.com)",
+      "WebFetch(domain:www.douyin.com)",
+      "WebSearch",
+      "Bash(defuddle parse *)",
+      "Bash(npm install *)",
+      "Read(//c/Users/刘宗林/AppData/Roaming/npm/node_modules/defuddle/**)",
+      "Read(//c/Users/刘宗林/AppData/Roaming/npm/**)",
+      "Bash(\"C:\\\\Users\\\\刘宗林\\\\AppData\\\\Roaming\\\\npm/defuddle\" parse *)",
+      "Bash(curl -sL -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://ls8sck0zrg.feishu.cn/wiki/wikcndm1Q1I2ZO3FA1jru5hcACb\")",
+      "Bash(xargs -0 -n1 echo)"
+    ]
+  }
+}

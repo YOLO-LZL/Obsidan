@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "sessionId": "ec2edc94-bfed-4629-9de8-6a54534210ea",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "cbeddcfd-62ef-4f67-a381-3ff3d273f320",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "把这里面的五十道题题目整理成二级标题，并把分类、难度、高频公司与题目分行",
+          "autoMentionContext": {
+            "noteName": "未命名",
+            "notePath": "求职/未命名.md"
+          }
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:46.012Z"
+    },
+    {
+      "id": "0e0d60c0-e55b-42ec-9dfc-6b0afe418579",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "The user wants me to read the file \"求职/未命名.md\" and process 50 interview questions from it, formatting them as level 2 headings with category, difficulty, and high-frequency companies listed on separate lines.\n\nLet me first read the file."
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:46.566Z"
+    },
+    {
+      "id": "fbf0e20c-c12c-46e7-a228-1302704d75f1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_00_I8PhyxiNu1Ym463Yp4Kq3047",
+          "title": "Read 求职\\未命名.md",
+          "status": "failed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "E:\\Git\\Obsidan\\求职\\未命名.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "E:\\Git\\Obsidan\\求职\\未命名.md"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "The file doesn't exist as specified. Let me check if the \"求职\" directory exists and what files are in it."
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:48.130Z"
+    },
+    {
+      "id": "f18e690e-6e10-4a26-8acf-dbeb3cb1e519",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_00_v78Nxg5m14nlcbZ2A3L23334",
+          "title": "Find `E:\\Git\\Obsidan` `求职/**/*`",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "locations": [
+            {
+              "path": "E:\\Git\\Obsidan"
+            }
+          ],
+          "rawInput": {
+            "pattern": "求职/**/*",
+            "path": "E:\\Git\\Obsidan"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "The file \"求职/未命名.md\" doesn't exist, but there's \"求职/AI Agent 面试 Top50.md\" which seems like it could be the right file - 50 AI Agent interview questions. Let me read it."
+        },
+        {
+          "type": "text",
+          "text": "文件路径是 `求职/AI Agent 面试 Top50.md`，我来读取。"
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:49.129Z"
+    },
+    {
+      "id": "f738c498-be62-40fc-a0f3-2f2a308834b6",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_00_sr0YxUFXMTeKNArr1cMQ6742",
+          "title": "Read 求职\\AI Agent 面试 Top50.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "E:\\Git\\Obsidan\\求职\\AI Agent 面试 Top50.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "E:\\Git\\Obsidan\\求职\\AI Agent 面试 Top50.md"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "Now I need to process these 50 questions and format them properly with:\n- 题目 as level 2 headings (##)\n- 分类 on one line\n- 难度 on one line\n- 高频公司 on one line\n\nLet me write the formatted content back to the file. I need to parse each question and reformat it.\n\nThe file has some odd characters at the start (zero-width characters). Let me write the clean formatted version.\n\nLet me carefully parse each question and format them:\n\n1. 什么是 ReAct？它的思考-行动-观察循环和工具调用流程是怎样的？ 分类：Agent / LLM 难度：进阶 高频公司：淘天、腾讯、字节、百度\n\nShould become:\n## 1、什么是 ReAct？它的思考-行动-观察循环和工具调用流程是怎样的？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天、腾讯、字节、百度\n\nLet me do this for all 50 questions and write the file."
+        },
+        {
+          "type": "text",
+          "text": "我来把这份 50 道题整理成结构化格式。"
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:50.858Z"
+    },
+    {
+      "id": "c08761b1-87ea-4fd6-b277-1b0230b78f65",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "call_00_GeCi5im0818DIxEtaikq4507",
+          "title": "Write 求职\\AI Agent 面试 Top50.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "E:\\Git\\Obsidan\\求职\\AI Agent 面试 Top50.md",
+              "newText": "## 1、什么是 ReAct？它的思考-行动-观察循环和工具调用流程是怎样的？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天、腾讯、字节、百度\n\n## 2、RAG 中长文档切片的粒度和分块策略如何设计与优化？\n分类：RAG\n难度：进阶\n高频公司：快手、字节、淘天\n\n## 3、RAG 系统评测的维度和常用指标如何设计？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手、米可\n\n## 4、RAG 系统中的文档分块策略如何设计？chunk 大小、父子分块和不同文档格式要怎么取舍？\n分类：RAG\n难度：进阶\n高频公司：Moka、阿里、百度\n\n## 5、多 Agent 协作有哪些常见模式、适用场景和主要挑战？\n分类：Agent\n难度：进阶\n高频公司：字节、阿里云、阿里、蚂蚁、小红书、淘天\n\n## 6、Agent 的上下文管理和记忆机制通常如何设计，如何避免上下文过长或信息污染？\n分类：Agent\n难度：进阶\n高频公司：快手、百度、字节、阿里云、蚂蚁\n\n## 7、在开发工作中如何使用 AI 工具辅助编程和提效？\n分类：AICoding / OpenEnded\n难度：进阶\n高频公司：小红书、蚂蚁、影石\n\n## 8、大模型长上下文场景下，如何进行上下文压缩与优化？\n分类：LLM / RAG / Agent\n难度：进阶\n高频公司：快手、淘天、拼多多、腾讯\n\n## 9、在 LLM 或 RAG 应用中，如何减少和规避幻觉问题？\n分类：LLM / RAG\n难度：进阶\n高频公司：阿里云、京东、蚂蚁\n\n## 10、在 RAG 中，既然向量检索已经计算了相似度，为什么还需要引入交叉编码器进行重排？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手\n\n## 11、如何评估 Rerank 的有效性，常用哪些指标？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手\n\n## 12、GRPO 和 PPO 的核心区别是什么？在信用分配、优势估计和方差控制上分别有什么差异？\n分类：LLM / Evaluation\n难度：深入\n高频公司：作业帮、腾讯、三七互娱\n\n## 13、工具调用的安全控制与敏感接口限制如何实现？\n分类：Agent / Prompt\n难度：进阶\n高频公司：快手\n\n## 14、ReAct 与 Plan-and-Execute 有什么区别，分别适用于什么场景，为什么在项目中会选择 ReAct？\n分类：Agent\n难度：进阶\n高频公司：淘天、腾讯\n\n## 15、如何自建一个 Agent 系统，并将其做到生产级落地？\n分类：Agent\n难度：进阶\n高频公司：万类智生、蚂蚁、字节、腾讯\n\n## 16、向量数据库检索到的历史信息即使语义相关但时间过久，还能直接使用吗？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 17、单 Agent 和多 Agent 分别适用于哪些场景，如何判断是否需要多 Agent？\n分类：Agent\n难度：进阶\n高频公司：字节、淘天、阿里云\n\n## 18、Rerank 的 Top-k 数量通常如何确定？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 19、工具调用超时或返回空值时，如何设计 Prompt 让 Agent 进行用户反馈？\n分类：Agent / Prompt\n难度：进阶\n高频公司：快手\n\n## 20、MCP 和 Skills 有什么区别？它们分别解决什么问题？\n分类：MCP / Agent\n难度：进阶\n高频公司：作业帮、腾讯\n\n## 21、LLM 是如何实现工具调用的？Function Calling 的底层机制与执行流程是什么？\n分类：LLM / Agent\n难度：进阶\n高频公司：未知\n\n## 22、你做过的 AI 项目中最困难的技术挑战是什么，你是如何解决的？\n分类：Agent / OpenEnded / RAG\n难度：进阶\n高频公司：阿里云\n\n## 23、当 Agent 需要调用多个工具或工具之间存在依赖关系时，调度引擎应该如何设计？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 24、开源模型的 Function Calling 能力较弱时，如何通过微调或 Prompt 设计来提升其工具调用能力？\n分类：Agent / Prompt / LLM\n难度：进阶\n高频公司：未知\n\n## 25、Agentic RAG 与传统 RAG 的核心区别是什么？\n分类：RAG / Agent\n难度：进阶\n高频公司：未知\n\n## 26、在项目中是如何进行 LLM 模型选择的？是支持多模型切换、统一使用某家模型，还是自研模型？\n分类：LLM / OpenEnded / Agent\n难度：进阶\n高频公司：Shopee、腾讯、Moka\n\n## 27、在多 Agent 协作中，如何解决冲突、分歧以及争议无法收敛的问题？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 28、基于强化学习的 Agent 与传统基于 Prompt 的 Agent 有什么区别？\n分类：Agent / LLM / Prompt\n难度：进阶\n高频公司：未知\n\n## 29、如何评估 Agent 的执行效果和项目效果？\n分类：Agent / Evaluation\n难度：深入\n高频公司：数坤科技\n\n## 30、什么是 Multi-Agent 系统？它与单 Agent 系统相比有哪些特点和适用场景？\n分类：Agent\n难度：基础\n高频公司：未知\n\n## 31、在多轮工具调用中，如何判断下一步是继续调用工具还是直接结束流程？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 32、Agent 项目通常如何进行测试与评估？\n分类：Agent / Evaluation\n难度：进阶\n高频公司：字节\n\n## 33、为什么 Agent 需要 Memory 系统来维持任务连贯性？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 34、长上下文场景下如何做摘要压缩，既控制上下文长度又尽量避免关键信息丢失和语义扭曲？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 35、在 RAG 场景中，什么时候适合使用静态知识库，什么时候适合使用动态网页检索？\n分类：RAG\n难度：进阶\n高频公司：蚂蚁\n\n## 36、RAG 中长文本应该如何切分，如何选择合适的切分策略？\n分类：RAG\n难度：进阶\n高频公司：海天同创、淘天\n\n## 37、请详细讲解 ReAct 框架的原理。\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 38、如何解决 Agent 工具调用时的幻觉问题，例如编造 API 或传错参数？\n分类：Agent / LLM\n难度：进阶\n高频公司：未知\n\n## 39、为什么要使用 RAG（检索增强生成）技术？\n分类：RAG\n难度：基础\n高频公司：字节、淘天\n\n## 40、为什么工具描述中\"什么时候该用\"比\"能做什么\"更重要？工具描述设计有哪些关键原则？\n分类：Agent / Prompt / LLM\n难度：进阶\n高频公司：未知\n\n## 41、如何让 Agent 具备自我学习和经验沉淀的能力？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 42、Rerank 之后的 TopK 截断如何实现，截断值怎么确定？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 43、什么是 Memory？短期记忆在对话轮次增加时如何持续处理上下文爆炸和重复压缩？\n分类：Agent\n难度：深入\n高频公司：阿里、Moka\n\n## 44、Agent 的 Planning 模块有哪些主流实现方式，Step-by-step 和 Plan-and-execute 有什么区别？\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 45、Agent 开发中常见的系统安全风险有哪些，例如 Prompt Injection、沙箱逃逸和越权执行？应如何防范？\n分类：Agent / LLM\n难度：深入\n高频公司：未知\n\n## 46、Agent 耗时过长时，工程侧和基座侧分别有哪些优化手段？\n分类：Agent / LLM\n难度：进阶\n高频公司：未知\n\n## 47、请介绍 MCP（Model Context Protocol）的作用、原理，以及你是否有过相关实践？\n分类：MCP\n难度：进阶\n高频公司：腾讯、蚂蚁、字节\n\n## 48、如何设计 Agent 的流式输出，以提升用户体验，尤其是在包含工具调用和多轮大模型交互的场景下？\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 49、Agent 长期记忆的 FIFO 淘汰策略有哪些问题，如何优化？\n分类：Agent\n难度：进阶\n高频公司：腾讯\n\n## 50、什么是 Self-Reflection 机制？它在代码生成或故障排查 Agent 中如何应用？\n分类：Agent / AICoding\n难度：进阶\n高频公司：未知\n\n---\n\n No newline at end of file\n作者：马丁不会代码\n链接：<https://www.nowcoder.com/discuss/886328246717911040?sourceSSR=enterprise>\n来源：牛客网",
+              "oldText": "\n\n1、什么是 ReAct？它的思考-行动-观察循环和工具调用流程是怎样的？ 分类：Agent / LLM 难度：进阶 高频公司：淘天、腾讯、字节、百度\n\n2、RAG 中长文档切片的粒度和分块策略如何设计与优化？ 分类：RAG 难度：进阶 高频公司：快手、字节、淘天\n\n3、RAG 系统评测的维度和常用指标如何设计？ 分类：RAG / Evaluation 难度：进阶 高频公司：快手、米可\n\n4、RAG 系统中的文档分块策略如何设计？chunk 大小、父子分块和不同文档格式要怎么取舍？ 分类：RAG 难度：进阶 高频公司：Moka、阿里、百度\n\n5、多 Agent 协作有哪些常见模式、适用场景和主要挑战？ 分类：Agent 难度：进阶 高频公司：字节、阿里云、阿里、蚂蚁、小红书、淘天\n\n6、Agent 的上下文管理和记忆机制通常如何设计，如何避免上下文过长或信息污染？ 分类：Agent 难度：进阶 高频公司：快手、百度、字节、阿里云、蚂蚁\n\n7、在开发工作中如何使用 AI 工具辅助编程和提效？ 分类：AICoding / OpenEnded 难度：进阶 高频公司：小红书、蚂蚁、影石\n\n8、大模型长上下文场景下，如何进行上下文压缩与优化？ 分类：LLM / RAG / Agent 难度：进阶 高频公司：快手、淘天、拼多多、腾讯\n\n9、在 LLM 或 RAG 应用中，如何减少和规避幻觉问题？ 分类：LLM / RAG 难度：进阶 高频公司：阿里云、京东、蚂蚁\n\n10、在 RAG 中，既然向量检索已经计算了相似度，为什么还需要引入交叉编码器进行重排？ 分类：RAG / Evaluation 难度：进阶 高频公司：快手\n\n11、如何评估 Rerank 的有效性，常用哪些指标？ 分类：RAG / Evaluation 难度：进阶 高频公司：快手\n\n12、GRPO 和 PPO 的核心区别是什么？在信用分配、优势估计和方差控制上分别有什么差异？ 分类：LLM / Evaluation 难度：深入 高频公司：作业帮、腾讯、三七互娱\n\n13、工具调用的安全控制与敏感接口限制如何实现？ 分类：Agent / Prompt 难度：进阶 高频公司：快手\n\n14、ReAct 与 Plan-and-Execute 有什么区别，分别适用于什么场景，为什么在项目中会选择 ReAct？ 分类：Agent 难度：进阶 高频公司：淘天、腾讯\n\n15、如何自建一个 Agent 系统，并将其做到生产级落地？ 分类：Agent 难度：进阶 高频公司：万类智生、蚂蚁、字节、腾讯\n\n16、向量数据库检索到的历史信息即使语义相关但时间过久，还能直接使用吗？ 分类：RAG 难度：进阶 高频公司：快手\n\n17、单 Agent 和多 Agent 分别适用于哪些场景，如何判断是否需要多 Agent？ 分类：Agent 难度：进阶 高频公司：字节、淘天、阿里云\n\n18、Rerank 的 Top-k 数量通常如何确定？ 分类：RAG 难度：进阶 高频公司：快手\n\n19、工具调用超时或返回空值时，如何设计 Prompt 让 Agent 进行用户反馈？ 分类：Agent / Prompt 难度：进阶 高频公司：快手\n\n20、MCP 和 Skills 有什么区别？它们分别解决什么问题？ 分类：MCP / Agent 难度：进阶 高频公司：作业帮、腾讯\n\n21、LLM 是如何实现工具调用的？Function Calling 的底层机制与执行流程是什么？ 分类：LLM / Agent 难度：进阶 高频公司：未知\n\n22、你做过的 AI 项目中最困难的技术挑战是什么，你是如何解决的？ 分类：Agent / OpenEnded / RAG 难度：进阶 高频公司：阿里云\n\n23、当 Agent 需要调用多个工具或工具之间存在依赖关系时，调度引擎应该如何设计？ 分类：Agent 难度：深入 高频公司：未知\n\n24、开源模型的 Function Calling 能力较弱时，如何通过微调或 Prompt 设计来提升其工具调用能力？ 分类：Agent / Prompt / LLM 难度：进阶 高频公司：未知\n\n25、Agentic RAG 与传统 RAG 的核心区别是什么？ 分类：RAG / Agent 难度：进阶 高频公司：未知\n\n26、在项目中是如何进行 LLM 模型选择的？是支持多模型切换、统一使用某家模型，还是自研模型？ 分类：LLM / OpenEnded / Agent 难度：进阶 高频公司：Shopee、腾讯、Moka\n\n27、在多 Agent 协作中，如何解决冲突、分歧以及争议无法收敛的问题？ 分类：Agent 难度：深入 高频公司：未知\n\n28、基于强化学习的 Agent 与传统基于 Prompt 的 Agent 有什么区别？ 分类：Agent / LLM / Prompt 难度：进阶 高频公司：未知\n\n29、如何评估 Agent 的执行效果和项目效果？ 分类：Agent / Evaluation 难度：深入 高频公司：数坤科技\n\n30、什么是 Multi-Agent 系统？它与单 Agent 系统相比有哪些特点和适用场景？ 分类：Agent 难度：基础 高频公司：未知\n\n31、在多轮工具调用中，如何判断下一步是继续调用工具还是直接结束流程？ 分类：Agent / LLM 难度：进阶 高频公司：淘天\n\n32、Agent 项目通常如何进行测试与评估？ 分类：Agent / Evaluation 难度：进阶 高频公司：字节\n\n33、为什么 Agent 需要 Memory 系统来维持任务连贯性？ 分类：Agent / LLM 难度：进阶 高频公司：淘天\n\n34、长上下文场景下如何做摘要压缩，既控制上下文长度又尽量避免关键信息丢失和语义扭曲？ 分类：Agent / LLM 难度：进阶 高频公司：淘天\n\n35、在 RAG 场景中，什么时候适合使用静态知识库，什么时候适合使用动态网页检索？ 分类：RAG 难度：进阶 高频公司：蚂蚁\n\n36、RAG 中长文本应该如何切分，如何选择合适的切分策略？ 分类：RAG 难度：进阶 高频公司：海天同创、淘天\n\n37、请详细讲解 ReAct 框架的原理。 分类：Agent 难度：进阶 高频公司：未知\n\n38、如何解决 Agent 工具调用时的幻觉问题，例如编造 API 或传错参数？ 分类：Agent / LLM 难度：进阶 高频公司：未知\n\n39、为什么要使用 RAG（检索增强生成）技术？ 分类：RAG 难度：基础 高频公司：字节、淘天\n\n40、为什么工具描述中\"什么时候该用\"比\"能做什么\"更重要？工具描述设计有哪些关键原则？ 分类：Agent / Prompt / LLM 难度：进阶 高频公司：未知\n\n41、如何让 Agent 具备自我学习和经验沉淀的能力？ 分类：Agent 难度：深入 高频公司：未知\n\n42、Rerank 之后的 TopK 截断如何实现，截断值怎么确定？ 分类：RAG 难度：进阶 高频公司：快手\n\n43、什么是 Memory？短期记忆在对话轮次增加时如何持续处理上下文爆炸和重复压缩？ 分类：Agent 难度：深入 高频公司：阿里、Moka\n\n44、Agent 的 Planning 模块有哪些主流实现方式，Step-by-step 和 Plan-and-execute 有什么区别？ 分类：Agent 难度：进阶 高频公司：未知\n\n45、Agent 开发中常见的系统安全风险有哪些，例如 Prompt Injection、沙箱逃逸和越权执行？应如何防范？ 分类：Agent / LLM 难度：深入 高频公司：未知\n\n46、Agent 耗时过长时，工程侧和基座侧分别有哪些优化手段？ 分类：Agent / LLM 难度：进阶 高频公司：未知\n\n47、请介绍 MCP（Model Context Protocol）的作用、原理，以及你是否有过相关实践？ 分类：MCP 难度：进阶 高频公司：腾讯、蚂蚁、字节\n\n48、如何设计 Agent 的流式输出，以提升用户体验，尤其是在包含工具调用和多轮大模型交互的场景下？ 分类：Agent 难度：进阶 高频公司：未知\n\n49、Agent 长期记忆的 FIFO 淘汰策略有哪些问题，如何优化？ 分类：Agent 难度：进阶 高频公司：腾讯\n\n50、什么是 Self-Reflection 机制？它在代码生成或故障排查 Agent 中如何应用？ 分类：Agent / AICoding 难度：进阶 高频公司：未知\n\n  \n  \n作者：马丁不会代码  \n链接：[https://www.nowcoder.com/discuss/886328246717911040?sourceSSR=enterprise](https://www.nowcoder.com/discuss/886328246717911040?sourceSSR=enterprise)  \n来源：牛客网\n No newline at end of file"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "E:\\Git\\Obsidan\\求职\\AI Agent 面试 Top50.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "E:\\Git\\Obsidan\\求职\\AI Agent 面试 Top50.md",
+            "content": "## 1、什么是 ReAct？它的思考-行动-观察循环和工具调用流程是怎样的？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天、腾讯、字节、百度\n\n## 2、RAG 中长文档切片的粒度和分块策略如何设计与优化？\n分类：RAG\n难度：进阶\n高频公司：快手、字节、淘天\n\n## 3、RAG 系统评测的维度和常用指标如何设计？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手、米可\n\n## 4、RAG 系统中的文档分块策略如何设计？chunk 大小、父子分块和不同文档格式要怎么取舍？\n分类：RAG\n难度：进阶\n高频公司：Moka、阿里、百度\n\n## 5、多 Agent 协作有哪些常见模式、适用场景和主要挑战？\n分类：Agent\n难度：进阶\n高频公司：字节、阿里云、阿里、蚂蚁、小红书、淘天\n\n## 6、Agent 的上下文管理和记忆机制通常如何设计，如何避免上下文过长或信息污染？\n分类：Agent\n难度：进阶\n高频公司：快手、百度、字节、阿里云、蚂蚁\n\n## 7、在开发工作中如何使用 AI 工具辅助编程和提效？\n分类：AICoding / OpenEnded\n难度：进阶\n高频公司：小红书、蚂蚁、影石\n\n## 8、大模型长上下文场景下，如何进行上下文压缩与优化？\n分类：LLM / RAG / Agent\n难度：进阶\n高频公司：快手、淘天、拼多多、腾讯\n\n## 9、在 LLM 或 RAG 应用中，如何减少和规避幻觉问题？\n分类：LLM / RAG\n难度：进阶\n高频公司：阿里云、京东、蚂蚁\n\n## 10、在 RAG 中，既然向量检索已经计算了相似度，为什么还需要引入交叉编码器进行重排？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手\n\n## 11、如何评估 Rerank 的有效性，常用哪些指标？\n分类：RAG / Evaluation\n难度：进阶\n高频公司：快手\n\n## 12、GRPO 和 PPO 的核心区别是什么？在信用分配、优势估计和方差控制上分别有什么差异？\n分类：LLM / Evaluation\n难度：深入\n高频公司：作业帮、腾讯、三七互娱\n\n## 13、工具调用的安全控制与敏感接口限制如何实现？\n分类：Agent / Prompt\n难度：进阶\n高频公司：快手\n\n## 14、ReAct 与 Plan-and-Execute 有什么区别，分别适用于什么场景，为什么在项目中会选择 ReAct？\n分类：Agent\n难度：进阶\n高频公司：淘天、腾讯\n\n## 15、如何自建一个 Agent 系统，并将其做到生产级落地？\n分类：Agent\n难度：进阶\n高频公司：万类智生、蚂蚁、字节、腾讯\n\n## 16、向量数据库检索到的历史信息即使语义相关但时间过久，还能直接使用吗？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 17、单 Agent 和多 Agent 分别适用于哪些场景，如何判断是否需要多 Agent？\n分类：Agent\n难度：进阶\n高频公司：字节、淘天、阿里云\n\n## 18、Rerank 的 Top-k 数量通常如何确定？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 19、工具调用超时或返回空值时，如何设计 Prompt 让 Agent 进行用户反馈？\n分类：Agent / Prompt\n难度：进阶\n高频公司：快手\n\n## 20、MCP 和 Skills 有什么区别？它们分别解决什么问题？\n分类：MCP / Agent\n难度：进阶\n高频公司：作业帮、腾讯\n\n## 21、LLM 是如何实现工具调用的？Function Calling 的底层机制与执行流程是什么？\n分类：LLM / Agent\n难度：进阶\n高频公司：未知\n\n## 22、你做过的 AI 项目中最困难的技术挑战是什么，你是如何解决的？\n分类：Agent / OpenEnded / RAG\n难度：进阶\n高频公司：阿里云\n\n## 23、当 Agent 需要调用多个工具或工具之间存在依赖关系时，调度引擎应该如何设计？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 24、开源模型的 Function Calling 能力较弱时，如何通过微调或 Prompt 设计来提升其工具调用能力？\n分类：Agent / Prompt / LLM\n难度：进阶\n高频公司：未知\n\n## 25、Agentic RAG 与传统 RAG 的核心区别是什么？\n分类：RAG / Agent\n难度：进阶\n高频公司：未知\n\n## 26、在项目中是如何进行 LLM 模型选择的？是支持多模型切换、统一使用某家模型，还是自研模型？\n分类：LLM / OpenEnded / Agent\n难度：进阶\n高频公司：Shopee、腾讯、Moka\n\n## 27、在多 Agent 协作中，如何解决冲突、分歧以及争议无法收敛的问题？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 28、基于强化学习的 Agent 与传统基于 Prompt 的 Agent 有什么区别？\n分类：Agent / LLM / Prompt\n难度：进阶\n高频公司：未知\n\n## 29、如何评估 Agent 的执行效果和项目效果？\n分类：Agent / Evaluation\n难度：深入\n高频公司：数坤科技\n\n## 30、什么是 Multi-Agent 系统？它与单 Agent 系统相比有哪些特点和适用场景？\n分类：Agent\n难度：基础\n高频公司：未知\n\n## 31、在多轮工具调用中，如何判断下一步是继续调用工具还是直接结束流程？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 32、Agent 项目通常如何进行测试与评估？\n分类：Agent / Evaluation\n难度：进阶\n高频公司：字节\n\n## 33、为什么 Agent 需要 Memory 系统来维持任务连贯性？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 34、长上下文场景下如何做摘要压缩，既控制上下文长度又尽量避免关键信息丢失和语义扭曲？\n分类：Agent / LLM\n难度：进阶\n高频公司：淘天\n\n## 35、在 RAG 场景中，什么时候适合使用静态知识库，什么时候适合使用动态网页检索？\n分类：RAG\n难度：进阶\n高频公司：蚂蚁\n\n## 36、RAG 中长文本应该如何切分，如何选择合适的切分策略？\n分类：RAG\n难度：进阶\n高频公司：海天同创、淘天\n\n## 37、请详细讲解 ReAct 框架的原理。\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 38、如何解决 Agent 工具调用时的幻觉问题，例如编造 API 或传错参数？\n分类：Agent / LLM\n难度：进阶\n高频公司：未知\n\n## 39、为什么要使用 RAG（检索增强生成）技术？\n分类：RAG\n难度：基础\n高频公司：字节、淘天\n\n## 40、为什么工具描述中\"什么时候该用\"比\"能做什么\"更重要？工具描述设计有哪些关键原则？\n分类：Agent / Prompt / LLM\n难度：进阶\n高频公司：未知\n\n## 41、如何让 Agent 具备自我学习和经验沉淀的能力？\n分类：Agent\n难度：深入\n高频公司：未知\n\n## 42、Rerank 之后的 TopK 截断如何实现，截断值怎么确定？\n分类：RAG\n难度：进阶\n高频公司：快手\n\n## 43、什么是 Memory？短期记忆在对话轮次增加时如何持续处理上下文爆炸和重复压缩？\n分类：Agent\n难度：深入\n高频公司：阿里、Moka\n\n## 44、Agent 的 Planning 模块有哪些主流实现方式，Step-by-step 和 Plan-and-execute 有什么区别？\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 45、Agent 开发中常见的系统安全风险有哪些，例如 Prompt Injection、沙箱逃逸和越权执行？应如何防范？\n分类：Agent / LLM\n难度：深入\n高频公司：未知\n\n## 46、Agent 耗时过长时，工程侧和基座侧分别有哪些优化手段？\n分类：Agent / LLM\n难度：进阶\n高频公司：未知\n\n## 47、请介绍 MCP（Model Context Protocol）的作用、原理，以及你是否有过相关实践？\n分类：MCP\n难度：进阶\n高频公司：腾讯、蚂蚁、字节\n\n## 48、如何设计 Agent 的流式输出，以提升用户体验，尤其是在包含工具调用和多轮大模型交互的场景下？\n分类：Agent\n难度：进阶\n高频公司：未知\n\n## 49、Agent 长期记忆的 FIFO 淘汰策略有哪些问题，如何优化？\n分类：Agent\n难度：进阶\n高频公司：腾讯\n\n## 50、什么是 Self-Reflection 机制？它在代码生成或故障排查 Agent 中如何应用？\n分类：Agent / AICoding\n难度：进阶\n高频公司：未知\n\n---\n\n作者：马丁不会代码\n链接：<https://www.nowcoder.com/discuss/886328246717911040?sourceSSR=enterprise>\n来源：牛客网\n"
+          },
+          "permissionRequest": {
+            "requestId": "ad6f08d9-276b-4e92-be39-b0651afa8a45",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow all Write",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow_always",
+            "isActive": false
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "Done. The file has been formatted as requested. Let me summarize what was done."
+        },
+        {
+          "type": "text",
+          "text": "已完成整理。50 道题目全部改为 `##` 二级标题，分类、难度、高频公司各占一行，结构清晰。"
+        }
+      ],
+      "timestamp": "2026-05-21T14:36:53.967Z"
+    }
+  ],
+  "savedAt": "2026-05-21T14:37:31.662Z"
+}

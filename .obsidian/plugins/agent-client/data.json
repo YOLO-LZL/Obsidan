@@ -1,0 +1,101 @@
+{
+  "claude": {
+    "id": "claude-code-acp",
+    "displayName": "Claude Code",
+    "apiKey": "",
+    "command": "C:\\Users\\刘宗林\\AppData\\Roaming\\npm\\claude-agent-acp",
+    "args": [],
+    "env": []
+  },
+  "codex": {
+    "id": "codex-acp",
+    "displayName": "Codex",
+    "apiKey": "",
+    "command": "C:\\Users\\刘宗林\\AppData\\Roaming\\npm\\claude-agent-acp",
+    "args": [],
+    "env": []
+  },
+  "gemini": {
+    "id": "gemini-cli",
+    "displayName": "Gemini CLI",
+    "apiKey": "",
+    "command": "gemini",
+    "args": [
+      "--experimental-acp"
+    ],
+    "env": []
+  },
+  "customAgents": [],
+  "defaultAgentId": "claude-code-acp",
+  "autoAllowPermissions": false,
+  "autoMentionActiveNote": true,
+  "enableSystemNotifications": true,
+  "debugMode": false,
+  "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "exportSettings": {
+    "defaultFolder": "Agent Client",
+    "filenameTemplate": "agent_client_{date}_{time}",
+    "autoExportOnNewChat": false,
+    "autoExportOnCloseChat": false,
+    "openFileAfterExport": true,
+    "includeImages": true,
+    "imageLocation": "obsidian",
+    "imageCustomFolder": "Agent Client",
+    "frontmatterTag": "agent-client"
+  },
+  "windowsWslMode": false,
+  "sendMessageShortcut": "enter",
+  "chatViewLocation": "right-tab",
+  "displaySettings": {
+    "autoCollapseDiffs": false,
+    "diffCollapseThreshold": 10,
+    "maxNoteLength": 10000,
+    "maxSelectionLength": 10000,
+    "showEmojis": true,
+    "fontSize": null
+  },
+  "savedSessions": [
+    {
+      "sessionId": "294f888b-e3a8-49f0-894c-7eac0cd61de6",
+      "agentId": "codex-acp",
+      "cwd": "E:\\Git\\Obsidan",
+      "title": "l",
+      "createdAt": "2026-05-22T16:30:44.294Z",
+      "updatedAt": "2026-05-22T16:30:44.294Z"
+    },
+    {
+      "sessionId": "b581a6ba-6912-4f67-af1d-ce8df40d3694",
+      "agentId": "claude-code-acp",
+      "cwd": "E:\\Git\\Obsidan",
+      "title": "https://ls8sck0zrg.feishu.cn/wiki/wikcndm1Q1I2ZO3F...",
+      "createdAt": "2026-05-22T16:11:54.527Z",
+      "updatedAt": "2026-05-22T16:11:54.527Z"
+    },
+    {
+      "sessionId": "ec2edc94-bfed-4629-9de8-6a54534210ea",
+      "agentId": "claude-code-acp",
+      "cwd": "E:\\Git\\Obsidan",
+      "title": "把这里面的五十道题题目整理成二级标题，并把分类、难度、高频公司与题目分行",
+      "createdAt": "2026-05-21T14:37:31.654Z",
+      "updatedAt": "2026-05-21T14:37:31.655Z"
+    },
+    {
+      "sessionId": "4d0c7f66-750d-4458-ba7f-fa5c1ae17ff6",
+      "agentId": "claude-code-acp",
+      "cwd": "E:\\Git\\Obsidan",
+      "title": "你能读到本地的claude.md",
+      "createdAt": "2026-05-21T11:16:44.912Z",
+      "updatedAt": "2026-05-21T11:16:44.913Z"
+    }
+  ],
+  "lastUsedModels": {},
+  "lastUsedModes": {},
+  "enableFloatingChat": false,
+  "floatingButtonImage": "",
+  "floatingWindowSize": {
+    "width": 400,
+    "height": 500
+  },
+  "floatingWindowPosition": null,
+  "floatingButtonPosition": null
+}
