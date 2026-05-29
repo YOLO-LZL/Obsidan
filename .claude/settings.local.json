@@ -12,7 +12,22 @@
       "Read(//c/Users/刘宗林/AppData/Roaming/npm/**)",
       "Bash(\"C:\\\\Users\\\\刘宗林\\\\AppData\\\\Roaming\\\\npm/defuddle\" parse *)",
       "Bash(curl -sL -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://ls8sck0zrg.feishu.cn/wiki/wikcndm1Q1I2ZO3FA1jru5hcACb\")",
-      "Bash(xargs -0 -n1 echo)"
+      "Bash(xargs -0 -n1 echo)",
+      "Bash(obsidian search *)",
+      "Bash(obsidian read *)",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_run_code_unsafe",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_tabs",
+      "Bash(npx playwright *)",
+      "Bash(npx:*)",
+      "Bash(curl -s http://127.0.0.1:9222/json/version)",
+      "Bash(ls:*)",
+      "Bash(powershell:*)"
     ]
   }
 }
