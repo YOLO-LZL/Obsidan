@@ -1,3 +1,10 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .trash
+.obsidian/plugins/agent-client/sessions/
+.obsidian/plugins/easy-tracker/
+.obsidian/plugins/media-extended-4.2.5/
+.playwright-mcp/
+feishu-*.yml
+feishu-*.png
+page-snapshot-*.yml
