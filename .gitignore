@@ -1,10 +1,17 @@
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.trash
-.obsidian/plugins/agent-client/sessions/
-.obsidian/plugins/easy-tracker/
-.obsidian/plugins/media-extended-4.2.5/
+# Obsidian local configuration, plugins, and workspace state.
+.obsidian/
+
+# Local tools and editor settings.
+.idea/
 .playwright-mcp/
+.claude/
+.claudian/
+
+# OS metadata and temporary files.
+.DS_Store
+.trash/
+
+# Locally captured web content and snapshots.
 feishu-*.yml
 feishu-*.png
 page-snapshot-*.yml
